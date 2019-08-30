@@ -240,7 +240,10 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('video').prop('muted',true).play()
+      $('video').each(function (index, value){
+        $(this).play();
+      });
+      // $('video').prop('muted',true).play()
     });
   </script>
 
