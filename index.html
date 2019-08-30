@@ -238,11 +238,14 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    $(function(){
-      $( "video" ).each(function( index ) {
-        console.log( index );
-        $( "video" )[index].play()
-      });
+    $(window).scroll(function() {
+      $('video').each(function() {
+        if ($(this).visible(true)) {
+          $(this)[0].play();
+        } else {
+          $(this)[0].pause();
+        }
+      })
     });
   </script>
 </body>
