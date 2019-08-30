@@ -99,9 +99,10 @@
   <section class="showcase">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img">
-          <video class="video media" alt="head tracking" height="480" width="480" autoplay="" playsinline="" preload="auto" poster="img/head_detection.jpg" tabindex="-1" style="max-width: 480px; margin: 0px auto; display: block;" loop=""><source src="video/head_detection.mp4"></video>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="max-height:480px; overflow:hidden;">
+          <video autoplay loop preload="auto" poster="img/head_detection.jpg" style="width: 100%; margin: 0px auto; display: block;" >
+            <source src="video/head_detection.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
           <h2>Track Fish</h2>
@@ -110,7 +111,10 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img">
-          <video class="video media" alt="pellet tracking" height="480" width="480" autoplay="" playsinline="" preload="auto" poster="img/pellet_detection.jpg" tabindex="-1" style="max-width: 480px; margin: 0px auto; display: block;" loop=""><source src="video/pellet_detection.mp4" type="video/mp4"><source src="video/pellet_detection.mp4" type="video/webm"><source src="video/pellet_detection.mp4" type="video/mp4"><source src="video/pellet_detection.mp4" type="video/mp4"></video>
+          <video autoplay loop preload="auto" poster="img/pellet_detection.jpg" style="width: 100%; margin: 0px auto; display: block;" >
+            <source src="video/pellet_detection.mp4" type="video/mp4">
+          </video>
+
         </div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Detect Pellets</h2>
